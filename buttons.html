@@ -13,6 +13,13 @@
         padding: 10px;
         cursor: pointer;
         margin-right: 10px;
+        transition: opacity 1s;
+      }
+      .yt-btn:hover{
+        opacity: 0.7;
+      }
+      .yt-btn:active{
+        opacity: 0.2;
       }
       .join-btn{
         background-color: rgb(255, 255, 255);
@@ -25,6 +32,14 @@
         border-radius: 3px;
         cursor: pointer;
         margin-right: 10px;
+        transition: background-color .25s, color .25s;
+      }
+      .join-btn:hover{
+        background-color: rgb(21, 161, 255);
+        color: rgb(255, 255, 255);
+      }
+      .join-btn:active{
+        opacity: 0.7;
       }
       .tweet-btn{
         background-color: rgb(92, 162, 243);
@@ -36,6 +51,10 @@
         width: 90px;
         border-radius: 40px;
         cursor: pointer;
+        transition: box-shadow .25s;
+      }
+      .tweet-btn:hover{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, .15);
       }
     </style>
   </head>
