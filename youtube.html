@@ -8,6 +8,7 @@
         width: 300px;
       }
       .search-bar{
+        display: block;
         font-size: 20px;
         margin-left: 12px;
         padding: 5px;
@@ -15,24 +16,27 @@
       }
       .video-title{
         width: 300px;
+        font-weight: bold;
       }
       .video-author,
       .video-stats{
-       font-size: 12px;
+       font-size: 15px;
+       margin-left: 30px;
       }
-      .div-example{
-        display:inline-block;
+      .video-preview{
+        display: inline-block;
+        width: 300px;
       }
     </style>
   </head>
   <body>
     <input class="search-bar" type="text" placeholder="Search">
-    <img class="tumbnail" src="images/thumbnail-1.webp">
     
-    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-    <p class="video-author">Marques Brownlee</p>
-    <p class="video-stats">3.4M views &#183; 6 months ago</p>
-
-    <div class="div-example">this is div</div>
+    <div class="video-preview">
+      <img class="tumbnail" src="images/thumbnail-1.webp">  
+      <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+      <p class="video-author">Marques Brownlee</p>
+      <p class="video-stats">3.4M views &#183; 6 months ago</p>
+    </div>
   </body>
 </html>
