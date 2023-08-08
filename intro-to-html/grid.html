@@ -2,6 +2,72 @@
 <html>
   <head>
     <title> Grid practise</title>
+    <style>
+      .mops-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+        row-gap: 30px;
+        margin-top: 10px;
+      }
+      .mops-cont{
+        box-shadow: 0 0 10px rgb(110, 110, 110);
+      }
+      .inside-grid{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+      }
+      .photofoto{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: right;
+        vertical-align: top;
+        margin-bottom: 10px;
+      }
+      .name{
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 10px;
+      }
+      .photo-avek{
+        width: 50px;
+        height: 50px;
+        background-color: aqua;
+        object-fit: cover;
+        border-radius: 50%;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .text-ins{
+        color: gray;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      .friend-btn{
+        font-size: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: rgb(65, 138, 197);
+        color: white;
+        border-radius: 7px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+        transition: background-color .1s, box-shadow .1s;
+      }
+      .friend-btn:hover{
+        background-color: rgb(139, 165, 187);
+        box-shadow: 0 0 5px gray;
+      }
+    </style>
   </head>
   <body style="padding-bottom: 1000px;">
     <div style="
@@ -52,6 +118,85 @@
       <div style="background-color: lightcoral;">1fr</div>
       <div style="background-color: aquamarine;">1fr</div>
       <div style="background-color: lightcoral;">1fr</div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-top: 10px;
+    ">
+      <div style="background-color: aquamarine;">col1</div>
+      <div style="background-color: lightcoral;">col2</div>
+      <div style="background-color: aquamarine;">col3</div>
+      <div style="background-color: lightcoral;">col4</div>
+      <div style="background-color: aquamarine;">col5</div>
+      <div style="background-color: lightcoral;">col6</div>
+      <div style="background-color: aquamarine;">col7</div>
+      <div style="background-color: lightcoral;">col8</div>
+    </div>
+
+    <div class="mops-grid">
+
+      <div class="mops-cont">
+        <div>
+          <img class="photofoto" src="img/Dog-Pug-A_pug_sprinting_at_full_pace_with_it's_tongue_out.jpg">
+        </div>
+        <div class="name">
+          Niunia
+        </div>
+        <div class="inside-grid">
+          <div>
+            <img class="photo-avek" src="img/Dog-Pug-A_pug_sprinting_at_full_pace_with_it's_tongue_out.jpg">
+          </div>
+          <div class="text-ins">
+            2 mutual friends
+          </div>
+        </div>
+        <div>
+          <button class="friend-btn">Add Friend</button>
+        </div>
+      </div>
+      <div class="mops-cont">
+        <div>
+          <img style="object-position: center;" class="photofoto" src="img/_130306960_dogs3.jpg">
+        </div>
+        <div class="name">
+          Tytus
+        </div>
+        <div class="inside-grid">
+          <div>
+            <img class="photo-avek" src="img/_130306960_dogs3.jpg">
+          </div>
+          <div class="text-ins">
+            0 mutual friends
+          </div>
+        </div>
+        <div>
+          <button class="friend-btn">Add Friend</button>
+        </div>
+      </div>
+      <div class="mops-cont">
+        <div>
+          <img style="object-position: center;" class="photofoto" src="img/pug-running-in-the-grass.jpg">
+        </div>
+        <div class="name">
+          Patus
+        </div>
+        <div class="inside-grid">
+          <div>
+            <img class="photo-avek" src="img/pug-running-in-the-grass.jpg">
+          </div>
+          <div class="text-ins">
+            6 mutual friends
+          </div>
+        </div>
+        <div>
+          <button class="friend-btn">Add Friend</button>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
