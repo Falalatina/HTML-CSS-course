@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercises nested flex</title>
+
+    <style>
+      .body{
+        font-family: Arial;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div style="
+    display: flex;
+    height: 60px;
+    margin-bottom: 20px;
+    ">
+      <div style="
+      display: flex;
+      background-color: aquamarine;
+      width: 100px;
+      justify-content: center;
+      align-items: center;
+      ">
+        <div style="
+        background-color: black;
+        color: white;
+        "> item1</div>
+      </div>
+      <div style="
+      background-color: chocolate;
+      width: 200px;
+      ">
+      </div>
+    </div>
+
+    <div style="
+    display: flex;
+    height: 60px;
+    margin-bottom: 20px;
+    ">
+      <div style="
+      background-color: aquamarine;
+      width: 100px;
+      ">  
+      </div>
+      <div style="
+      display: flex;
+      background-color: chocolate;
+      width: 200px;
+      justify-content: space-between;
+      align-items: center;
+      "> 
+
+        <div>
+          row1
+          <div  style="
+          background-color: black;
+          color: white;
+          ">row1</div>
+        </div>
+        <div style="
+        background-color: black;
+        color: white;
+        ">
+          row2
+        </div>
+      </div>
+    </div>
+
+    <div style="
+      border-width: 3px;
+      border-style: solid;
+      border-color: rgb(0, 0, 0, .08);
+      border-radius: 4px;
+      width: 450px;
+      padding: 10px;
+      ">
+      <div style="
+        margin: 10px;
+        color: gray;
+        "> ALL INBOXES</div>
+
+      <div style="
+        display: flex;
+        align-items: center;
+        ">
+        <div>
+          <img style="
+            width: 50px;
+            height: 50px;
+            object-fit: cover; 
+            object-position: right;
+            border-radius: 25px;
+            margin: 10px;
+            " 
+            src="img/Dog-Pug-A_pug_sprinting_at_full_pace_with_it's_tongue_out.jpg">
+        </div>
+        <div style="
+          display: flex;
+          justify-content: space-between;
+          margin: 0 10px 10px 10px;
+          ">
+          <div style="
+            font-weight: bold;
+            ">
+            Best Buy
+            <div>Your best Buy</div>
+            <div style="
+            margin-top: 5px;
+            color: gray;
+            font-weight: normal;
+            ">
+            Thank you for shopping at Best Buy, here is...</div>
+          </div>
+          <div style="
+            font-weight: bold;
+            color: gray;
+            ">
+            4&#58;58 PM</div>
+        </div>
+        
+      </div>
+
+      <div style="
+      display: flex;
+      align-items: center;
+      ">
+      <div>
+        <img style="
+          width: 50px;
+          height: 50px;
+          object-fit: cover; 
+          object-position: center;
+          border-radius: 25px;
+          margin: 10px;
+          " 
+          src="img/_130306960_dogs3.jpg">
+      </div>
+      <div style="
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px 10px 10px;
+        ">
+        <div style="
+          font-weight: bold;
+          ">
+          Chewy Promotions
+          <div>Biggest sales of the year</div>
+          <div style="
+          margin-top: 5px;
+          color: gray;
+          font-weight: normal;
+          ">
+          Hi there! We're writing to tell you about our...
+          </div>
+        </div>
+        <div style="
+          font-weight: bold;
+          color: gray;
+          ">
+          12&#58;32 PM</div>
+      </div>
+      
+    </div>
+
+    <div style="
+    display: flex;
+    align-items: center;
+    ">
+    <div>
+      <img style="
+        width: 50px;
+        height: 50px;
+        object-fit: cover; 
+        object-position: center;
+        border-radius: 25px;
+        margin: 10px;
+        " 
+        src="img/pug-running-in-the-grass.jpg">
+    </div>
+    <div style="
+      display: flex;
+      justify-content: space-between;
+      margin: 0 10px 10px 10px;
+      ">
+      <div style="
+        font-weight: bold;
+        ">
+        Netflix
+        <div>Here's what's coming soon to Netflix</div>
+        <div style="
+        margin-top: 5px;
+        color: gray;
+        font-weight: normal;
+        ">
+        Brand new movies and shows, old favorities...
+        </div>
+      </div>
+      <div style="
+        font-weight: bold;
+        color: gray;
+        ">
+        9&#58;00 AM</div>
+    </div>
+    
+     </div>
+
+  </div>
+
+  <div style="
+    display: flex;
+    width: 400px;
+    
+    margin-top: 10px;
+    ">
+    <div>
+      <img style="
+      width: 50px;
+      height: 50px;
+      object-fit: cover; 
+      object-position: right;
+      border-radius: 25px;
+      margin: 10px;
+      " 
+      src="img/Dog-Pug-A_pug_sprinting_at_full_pace_with_it's_tongue_out.jpg">
+    </div>
+
+    <div style="
+      flex: 1;
+      margin: 10px;
+      font-size: 14px;
+      ">
+      <div style="display: flex; ">
+        <div style="
+            padding-right: 5px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            ">
+            supersimple.dev 
+          </div> 
+        <div style="
+          color: gray;
+          ">
+          @SuperSimpleDev
+        </div>
+      </div>
+      <div>
+        What is backend web devvelopment? A complete overview. New video is up!
+      </div>
+      <div style="
+        display: flex;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(175, 175, 175);
+        border-radius: 10px;
+        margin: 10px;
+        height: 80px;
+        ">
+        <div style="
+          flex: 1; 
+          background-color: rgb(175, 175, 175);
+          ">  
+        </div>
+        <div style="
+          display: flex;
+          flex-direction: column;
+          flex: 2;
+          padding: 5px;
+          justify-content: center;
+          ">
+          <div style="margin-bottom: 10px;">
+            <a style="color: gray;
+              text-decoration: none;
+              " href="https://www.youtube.com/">youtube.com</a>
+          </div>
+          <div>Backend web devvelopment &ndash; a complete overview 	&#40;2021&#41;</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
