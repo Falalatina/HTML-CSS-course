@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top:0;
   left: 0;
   right: 0;
@@ -94,4 +94,18 @@
   height: 32px;
   border-radius: 16px;
 
+}
+.notifications-icon-container{
+  position: relative;
+}
+.notifications-number{
+  position: absolute;
+  top: -2px;
+  right: -5px;
+  background-color: rgb(182, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
 }
