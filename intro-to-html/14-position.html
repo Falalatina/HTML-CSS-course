@@ -17,6 +17,7 @@
       left: 0px;
       right: 0px;
       height: 50px;
+      z-index: 0;
     ">
       Header
     </div>
@@ -35,16 +36,36 @@
       background-color: aquamarine;
       height: 200px;
       width: 200px;
-      position: static;
+      position: relative;
       ">div 1 
+      <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        right: 2px;
+        bottom: 2px;
+        ">
+        5:00
+      </div>
     </div>
     <div style="
       background-color: rgb(255, 127, 227);
       height: 200px;
       width: 200px;
+      position: relative;
       ">
       div 2 
+      <div style="
+      position: absolute;
+      background-color: rgb(102, 255, 0);
+      color: white;
+      left: 10px;
+      top: 10px;
+      ">
+      absolute but in relative
     </div>
+    </div>
+
     <div style="
       background-color: brown;
       width: 50px;
@@ -54,6 +75,24 @@
       top: 50px;
     ">
       right sidebar
+      <div style="
+      position: absolute;
+      background-color: blue;
+      color: white;
+      left: 0px;
+      top: 0px;
+      ">
+      X
+    </div>
+    </div>
+    <div style="
+      position: absolute;
+      background-color: blue;
+      color: white;
+      left: 10px;
+      top: 10px;
+      ">
+      absolute
     </div>
     <div style="
       position: fixed;
