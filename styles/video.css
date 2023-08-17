@@ -48,3 +48,32 @@
   right: 5px;
   border-radius: 2px;
 }
+.channel-pic-test{
+  position: relative;
+}
+.channel-pic-test .tooltip{
+  position: absolute;
+  display: flex;
+  padding: 5px 8px 5px 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(170, 170, 170);
+  width: 150px;
+  font-size: 12px;
+  align-items: center;
+  border-radius: 6px;
+  font-family: Roboto,Arial;
+  color: black;
+  opacity: 0;
+  transition: opacity .2s;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.channel-pic-test:hover .tooltip{
+  opacity: 1;
+}
+.channel-pic-test .tooltip .profile-pic{
+  margin-right: 10px;
+}
+.name-tooltip{
+  font-weight: bold;
+}
