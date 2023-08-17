@@ -66,6 +66,44 @@
   margin-left: -1px;
   margin-right: 8px;
 }
+.search-icon .tooltip,
+.voice-search .tooltip,
+.upload-icon-container .tooltip,
+.apps-container .tooltip,
+.notifications-icon-container .tooltip{
+  position: absolute;
+  background-color: rgba(139, 139, 139, 0.692);
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity .2s;
+  pointer-events: none;
+  white-space: nowrap;
+  font-family: Roboto,Arial;
+  
+}
+.search-icon:hover .tooltip,
+.voice-search:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip{
+  opacity: 1;
+}
+.voice-search,
+.search-icon,
+.upload-icon-container,
+.apps-container,
+.notifications-icon-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
 .voice-search{
   height: 40px;
   width: 40px;
@@ -73,13 +111,12 @@
   border: none;
   background-color: rgb(226, 226, 226);
 }
+
 .search-i{
   height: 25px;
-  margin-top: 4px;
 }
 .voice-i{
   height: 25px;
-  margin-top: 4px;  
 }
 .upload-i{
   height: 24px;
